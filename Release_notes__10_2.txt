@@ -1,0 +1,13 @@
+7th Mar 2018 - Encoder 10.2.0 released 
+Encoder 10.2.0 released. This is a free update for 10.0 Encoder users.
+Includes a new Encoder for PHP 7.2.
+New bundled encoding options allow encodings from different encoders to be included in the same encoded file.
+Fix for a crash that could occur when the Encoder was attempting to acquire a license for itself and
+permissions on the licensing directory meant that files could not be created.
+Fix for an issue in the 7.1 Encoder whereby private methods were not called if there was an 
+overriding method in a sub-class. Specifically, there was a call to the private method from a parent method 
+and that parent method had itself been called from the child class.
+Fix for incorrect yield from parsing corresponding to PHP bug 74302 (https://bugs.php.net/bug.php?id=74302).
+
+=========source
+http://www.ioncube.com/news.php
